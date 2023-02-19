@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/bg-stars.svg);
+    background-color: hsl(235, 16%, 14%);
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'outfit', sans-serif;
+    font-family: 'Red Hat Text', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.countdown-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.countdown-body .header {
+    font-size: 25px;
+    letter-spacing: 5px;
+    width: 86%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 95px;
+    font-size: 50px;
+    color: hsl(345, 95%, 68%);
+    background-color: hsl(236, 21%, 26%);
+    border-radius: 5px;
+    box-shadow: 10px 10px;
+}
+
+.days p,
+.hours p,
+.minutes p,
+.seconds p {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: hsl(237, 18%, 59%);
+    text-align: center;
+    margin-top: 25px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 25%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.mountain {
+    z-index: -100;
+    position: fixed;
+    background-repeat: no-repeat;
+    bottom: 0;
+    width: 100%;
+    height: 25vh;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .countdown-body .header {
+        font-size: 25px;
+        letter-spacing: 10px;
+        margin-top: 10px;
+    }
+
+    .counter {
+        width: 80%;
+    }
+
+    .box {
+        width: 140px;
+        height: 140px;
+        font-size: 80px;
+    }
+
+    .days p,
+    .hours p,
+    .minutes p,
+    .seconds p {
+        font-size: 12px;
+        margin-top: 25px;
+    }
+
+    .icon {
+        width: 20%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
